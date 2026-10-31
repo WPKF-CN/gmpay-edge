@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Link, useNavigate } from "@tanstack/react-router";
-import { CodeXml, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import type { CSSProperties } from "react";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
@@ -356,16 +356,6 @@ export function CheckoutPage({
 						{m.checkout_powered_by()}
 						<strong className="text-foreground">{brand.name}</strong>
 					</span>
-					<span className="opacity-30">|</span>
-					<a
-						className="flex items-center gap-1 font-semibold text-foreground hover:opacity-70"
-						href="https://github.com/GMwalletApp/gmpay-edge"
-						rel="noopener noreferrer"
-						target="_blank"
-					>
-						<CodeXml className="size-3.5" />
-						{m.checkout_open_source_on()}
-					</a>
 				</footer>
 			</div>
 		</main>
